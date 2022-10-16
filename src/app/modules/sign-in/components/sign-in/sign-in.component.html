@@ -1,0 +1,26 @@
+<div class="w-full h-full" fxLayout="row" fxLayoutAlign="center center">
+  <form class="w-100 p-10" fxLayout="column" [formGroup]="signInForm">
+    <span class="font-medium text-lg">Sign In</span>
+
+    <mat-form-field class="mt-8 w-full">
+      <mat-label>Login</mat-label>
+      <input matInput formControlName="login">
+      <mat-error>{{ loginError }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="w-full">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password">
+      <mat-error>{{ passwordError }}</mat-error>
+    </mat-form-field>
+
+    <div *ngIf="hasError" class="mt-4 p-4 border-red text-red">
+      <span>Login or password is not correct</span>
+    </div>
+
+    <button mat-flat-button color="primary" class="w-full mt-4"
+            [disabled]="disabledSignIn" (click)="signIn()">
+      Sign In
+    </button>
+  </form>
+</div>

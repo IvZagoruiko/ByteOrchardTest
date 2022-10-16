@@ -2,3 +2,63 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.h-screen {
+  height: 100vh !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-100 {
+  width: 400px !important;
+}
+
+.h-full {
+  height: 100% !important;
+}
+
+.mt-4 {
+  margin-top: 16px !important;
+}
+
+.mt-8 {
+  margin-top: 32px !important;
+}
+
+.mt-10 {
+  margin-top: 40px !important;
+}
+
+.ml-4 {
+  margin-left: 16px !important;
+}
+
+.p-4 {
+  padding: 16px !important;
+}
+
+.p-10 {
+  padding: 40px !important;
+}
+
+.font-medium {
+  font-weight: 500 !important;
+}
+
+.text-lg {
+  font-size: 18px !important;
+}
+
+.text-red {
+  color: red !important;
+}
+
+.border-red {
+  border: 1px red solid !important;
+}
+
+.border-t {
+  border-top: solid 1px black !important;
+}
